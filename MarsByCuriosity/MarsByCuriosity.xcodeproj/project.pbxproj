@@ -11,7 +11,11 @@
 		5EEEF09E28EC306C00C480CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09D28EC306C00C480CE /* Assets.xcassets */; };
 		5EEEF0A128EC306C00C480CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09F28EC306C00C480CE /* LaunchScreen.storyboard */; };
 		5EEEF0AC28EC314D00C480CE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0AB28EC314D00C480CE /* RootViewController.swift */; };
-		5EEEF0AE28EC322F00C480CE /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0AD28EC322F00C480CE /* images.xcassets */; };
+		5EEEF0B328EC36E500C480CE /* dosis.book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0B028EC36E500C480CE /* dosis.book.ttf */; };
+		5EEEF0B428EC36E500C480CE /* dosis.extralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0B128EC36E500C480CE /* dosis.extralight.ttf */; };
+		5EEEF0B528EC36E500C480CE /* dosis.light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0B228EC36E500C480CE /* dosis.light.ttf */; };
+		5EEEF0BE28EC47F400C480CE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */; };
+		5EEEF0C228EC4A4A00C480CE /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0C128EC4A4A00C480CE /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +25,11 @@
 		5EEEF0A028EC306C00C480CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EEEF0A228EC306C00C480CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EEEF0AB28EC314D00C480CE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		5EEEF0AD28EC322F00C480CE /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		5EEEF0B028EC36E500C480CE /* dosis.book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.book.ttf; sourceTree = "<group>"; };
+		5EEEF0B128EC36E500C480CE /* dosis.extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.extralight.ttf; sourceTree = "<group>"; };
+		5EEEF0B228EC36E500C480CE /* dosis.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.light.ttf; sourceTree = "<group>"; };
+		5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5EEEF0C128EC4A4A00C480CE /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 		5EEEF09328EC306B00C480CE /* MarsByCuriosity */ = {
 			isa = PBXGroup;
 			children = (
+				5EEEF0B628EC46CA00C480CE /* Extensions */,
+				5EEEF0B928EC474600C480CE /* Helpers */,
 				5EEEF0A928EC313400C480CE /* UI */,
 				5EEEF0A828EC30E600C480CE /* SupportingFiles */,
 			);
@@ -65,9 +75,10 @@
 			children = (
 				5EEEF09428EC306B00C480CE /* AppDelegate.swift */,
 				5EEEF09D28EC306C00C480CE /* Assets.xcassets */,
-				5EEEF0AD28EC322F00C480CE /* images.xcassets */,
+				5EEEF0AF28EC36B800C480CE /* Font */,
 				5EEEF0A228EC306C00C480CE /* Info.plist */,
 				5EEEF09F28EC306C00C480CE /* LaunchScreen.storyboard */,
+				5EEEF0C128EC4A4A00C480CE /* images.xcassets */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -86,6 +97,31 @@
 				5EEEF0AB28EC314D00C480CE /* RootViewController.swift */,
 			);
 			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		5EEEF0AF28EC36B800C480CE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF0B028EC36E500C480CE /* dosis.book.ttf */,
+				5EEEF0B128EC36E500C480CE /* dosis.extralight.ttf */,
+				5EEEF0B228EC36E500C480CE /* dosis.light.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		5EEEF0B628EC46CA00C480CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5EEEF0B928EC474600C480CE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +182,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EEEF0AE28EC322F00C480CE /* images.xcassets in Resources */,
+				5EEEF0B428EC36E500C480CE /* dosis.extralight.ttf in Resources */,
+				5EEEF0B328EC36E500C480CE /* dosis.book.ttf in Resources */,
+				5EEEF0B528EC36E500C480CE /* dosis.light.ttf in Resources */,
+				5EEEF0C228EC4A4A00C480CE /* images.xcassets in Resources */,
 				5EEEF0A128EC306C00C480CE /* LaunchScreen.storyboard in Resources */,
 				5EEEF09E28EC306C00C480CE /* Assets.xcassets in Resources */,
 			);
@@ -161,6 +200,7 @@
 			files = (
 				5EEEF0AC28EC314D00C480CE /* RootViewController.swift in Sources */,
 				5EEEF09528EC306B00C480CE /* AppDelegate.swift in Sources */,
+				5EEEF0BE28EC47F400C480CE /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
