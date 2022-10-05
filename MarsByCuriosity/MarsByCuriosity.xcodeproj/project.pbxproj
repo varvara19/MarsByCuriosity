@@ -11,7 +11,6 @@
 		5EEEF09E28EC306C00C480CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09D28EC306C00C480CE /* Assets.xcassets */; };
 		5EEEF0A128EC306C00C480CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09F28EC306C00C480CE /* LaunchScreen.storyboard */; };
 		5EEEF0AC28EC314D00C480CE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0AB28EC314D00C480CE /* RootViewController.swift */; };
-		5EEEF0B328EC36E500C480CE /* dosis.book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0B028EC36E500C480CE /* dosis.book.ttf */; };
 		5EEEF0B428EC36E500C480CE /* dosis.extralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0B128EC36E500C480CE /* dosis.extralight.ttf */; };
 		5EEEF0B528EC36E500C480CE /* dosis.light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0B228EC36E500C480CE /* dosis.light.ttf */; };
 		5EEEF0BE28EC47F400C480CE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */; };
@@ -36,6 +35,11 @@
 		5EEEF0F128EC667400C480CE /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */; };
 		5EEEF0F328ED920A00C480CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F228ED920A00C480CE /* Localizable.strings */; };
 		5EEEF0F528ED932A00C480CE /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F428ED932A00C480CE /* loader.json */; };
+		5EEEF0F828ED967200C480CE /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F728ED967200C480CE /* DashboardViewController.swift */; };
+		5EEEF0FB28ED969B00C480CE /* CoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0FA28ED969B00C480CE /* CoreViewController.swift */; };
+		5EEEF0FD28ED994600C480CE /* FontFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0FC28ED994600C480CE /* FontFactory.swift */; };
+		5EEEF0FF28ED9A1F00C480CE /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0FE28ED9A1F00C480CE /* UIFont+Extension.swift */; };
+		5EEEF10128ED9D6800C480CE /* dosis.semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF10028ED9D6800C480CE /* dosis.semibold.ttf */; };
 		B19D5042CBDBA73D4B5E0608 /* Pods_MarsByCuriosity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +51,6 @@
 		5EEEF0A028EC306C00C480CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EEEF0A228EC306C00C480CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EEEF0AB28EC314D00C480CE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		5EEEF0B028EC36E500C480CE /* dosis.book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.book.ttf; sourceTree = "<group>"; };
 		5EEEF0B128EC36E500C480CE /* dosis.extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.extralight.ttf; sourceTree = "<group>"; };
 		5EEEF0B228EC36E500C480CE /* dosis.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.light.ttf; sourceTree = "<group>"; };
 		5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -72,6 +75,11 @@
 		5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		5EEEF0F228ED920A00C480CE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		5EEEF0F428ED932A00C480CE /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		5EEEF0F728ED967200C480CE /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		5EEEF0FA28ED969B00C480CE /* CoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreViewController.swift; sourceTree = "<group>"; };
+		5EEEF0FC28ED994600C480CE /* FontFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFactory.swift; sourceTree = "<group>"; };
+		5EEEF0FE28ED9A1F00C480CE /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		5EEEF10028ED9D6800C480CE /* dosis.semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.semibold.ttf; sourceTree = "<group>"; };
 		A926378F7F093F2273DA91C2 /* Pods-MarsByCuriosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.debug.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.debug.xcconfig"; sourceTree = "<group>"; };
 		F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsByCuriosity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +117,7 @@
 		5EEEF09328EC306B00C480CE /* MarsByCuriosity */ = {
 			isa = PBXGroup;
 			children = (
+				5EEEF0F928ED968400C480CE /* Core */,
 				5EEEF0DD28EC5C1700C480CE /* Entities */,
 				5EEEF0B628EC46CA00C480CE /* Extensions */,
 				5EEEF0B928EC474600C480CE /* Helpers */,
@@ -137,7 +146,7 @@
 		5EEEF0A928EC313400C480CE /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5EEEF0AA28EC313A00C480CE /* RootViewController */,
+				5EEEF0F628ED966100C480CE /* Dashboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -153,9 +162,9 @@
 		5EEEF0AF28EC36B800C480CE /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				5EEEF0B028EC36E500C480CE /* dosis.book.ttf */,
 				5EEEF0B128EC36E500C480CE /* dosis.extralight.ttf */,
 				5EEEF0B228EC36E500C480CE /* dosis.light.ttf */,
+				5EEEF10028ED9D6800C480CE /* dosis.semibold.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -167,6 +176,7 @@
 				5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */,
 				5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */,
 				5EEEF0C628EC4E7500C480CE /* UIDevice+Extension.swift */,
+				5EEEF0FE28ED9A1F00C480CE /* UIFont+Extension.swift */,
 				5EEEF0D528EC58C400C480CE /* UIView+Extension.swift */,
 			);
 			path = Extensions;
@@ -179,6 +189,7 @@
 				5EEEF0C428EC4E2200C480CE /* AppConstants.swift */,
 				5EEEF0D028EC51B200C480CE /* AppHUD.swift */,
 				5EEEF0DB28EC5A7E00C480CE /* Colors.swift */,
+				5EEEF0FC28ED994600C480CE /* FontFactory.swift */,
 				5EEEF0CE28EC4FF700C480CE /* Localization.swift */,
 				5EEEF0C828EC4EF200C480CE /* Logging.swift */,
 			);
@@ -213,6 +224,23 @@
 				5EEEF0EC28EC65B600C480CE /* Rover.swift */,
 			);
 			path = GetMarsPhotoResponse;
+			sourceTree = "<group>";
+		};
+		5EEEF0F628ED966100C480CE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF0F728ED967200C480CE /* DashboardViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		5EEEF0F928ED968400C480CE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF0AA28EC313A00C480CE /* RootViewController */,
+				5EEEF0FA28ED969B00C480CE /* CoreViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		8B80832E44AB8F905EE6C49A /* Pods */ = {
@@ -293,10 +321,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEEF0B428EC36E500C480CE /* dosis.extralight.ttf in Resources */,
-				5EEEF0B328EC36E500C480CE /* dosis.book.ttf in Resources */,
 				5EEEF0F528ED932A00C480CE /* loader.json in Resources */,
 				5EEEF0B528EC36E500C480CE /* dosis.light.ttf in Resources */,
 				5EEEF0F328ED920A00C480CE /* Localizable.strings in Resources */,
+				5EEEF10128ED9D6800C480CE /* dosis.semibold.ttf in Resources */,
 				5EEEF0C228EC4A4A00C480CE /* images.xcassets in Resources */,
 				5EEEF0A128EC306C00C480CE /* LaunchScreen.storyboard in Resources */,
 				5EEEF09E28EC306C00C480CE /* Assets.xcassets in Resources */,
@@ -352,8 +380,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EEEF0FB28ED969B00C480CE /* CoreViewController.swift in Sources */,
 				5EEEF0DC28EC5A7F00C480CE /* Colors.swift in Sources */,
 				5EEEF0E628EC64C200C480CE /* GetMarsPhotoResponse.swift in Sources */,
+				5EEEF0FD28ED994600C480CE /* FontFactory.swift in Sources */,
 				5EEEF0CD28EC4F7200C480CE /* ErrorInfo.swift in Sources */,
 				5EEEF0CB28EC4F4900C480CE /* NetworkRequest.swift in Sources */,
 				5EEEF0DF28EC5C8300C480CE /* RoverCamera.swift in Sources */,
@@ -368,9 +398,11 @@
 				5EEEF0F128EC667400C480CE /* UIApplication+Extension.swift in Sources */,
 				5EEEF0ED28EC65B600C480CE /* Rover.swift in Sources */,
 				5EEEF09528EC306B00C480CE /* AppDelegate.swift in Sources */,
+				5EEEF0FF28ED9A1F00C480CE /* UIFont+Extension.swift in Sources */,
 				5EEEF0E128EC5DCC00C480CE /* GetMarsPhotoRequest.swift in Sources */,
 				5EEEF0BE28EC47F400C480CE /* UIColor+Extension.swift in Sources */,
 				5EEEF0C728EC4E7500C480CE /* UIDevice+Extension.swift in Sources */,
+				5EEEF0F828ED967200C480CE /* DashboardViewController.swift in Sources */,
 				5EEEF0C528EC4E2200C480CE /* AppConstants.swift in Sources */,
 				5EEEF0CF28EC4FF700C480CE /* Localization.swift in Sources */,
 			);
