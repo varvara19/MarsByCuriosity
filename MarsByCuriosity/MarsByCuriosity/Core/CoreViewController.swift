@@ -7,6 +7,13 @@
 import UIKit
 
 class CoreViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        addSubviews()
+        setupConstraints()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -46,4 +53,8 @@ class CoreViewController: UIViewController {
             navigationController.navigationBar.isTranslucent = false
         }
     }
+    
+    func addSubviews() { }
+    
+    func setupConstraints() { }
 }
