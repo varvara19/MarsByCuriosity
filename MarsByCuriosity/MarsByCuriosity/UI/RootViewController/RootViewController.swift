@@ -22,7 +22,11 @@ class RootViewController: UIViewController {
         animationToDashboard()
     }
     
-    private func animationToDashboard() { }
+    private func animationToDashboard() {
+        GetMarsPhotoRequest(by: Date(), camera: .all, page: 1) { resp in
+            
+        }.runRequest()
+    }
     
     private func addNewChildViewController(vc: UIViewController) {
         self.animation(duration: 0.26, newVC: vc, oldVC: self.childViewController)

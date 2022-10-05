@@ -16,9 +16,31 @@
 		5EEEF0B528EC36E500C480CE /* dosis.light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0B228EC36E500C480CE /* dosis.light.ttf */; };
 		5EEEF0BE28EC47F400C480CE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */; };
 		5EEEF0C228EC4A4A00C480CE /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0C128EC4A4A00C480CE /* images.xcassets */; };
+		5EEEF0C528EC4E2200C480CE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0C428EC4E2200C480CE /* AppConstants.swift */; };
+		5EEEF0C728EC4E7500C480CE /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0C628EC4E7500C480CE /* UIDevice+Extension.swift */; };
+		5EEEF0C928EC4EF300C480CE /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0C828EC4EF200C480CE /* Logging.swift */; };
+		5EEEF0CB28EC4F4900C480CE /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0CA28EC4F4900C480CE /* NetworkRequest.swift */; };
+		5EEEF0CD28EC4F7200C480CE /* ErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0CC28EC4F7200C480CE /* ErrorInfo.swift */; };
+		5EEEF0CF28EC4FF700C480CE /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0CE28EC4FF700C480CE /* Localization.swift */; };
+		5EEEF0D128EC51B200C480CE /* AppHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0D028EC51B200C480CE /* AppHUD.swift */; };
+		5EEEF0D628EC58C400C480CE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0D528EC58C400C480CE /* UIView+Extension.swift */; };
+		5EEEF0DA28EC59E000C480CE /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0D928EC59E000C480CE /* Int+Extension.swift */; };
+		5EEEF0DC28EC5A7F00C480CE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0DB28EC5A7E00C480CE /* Colors.swift */; };
+		5EEEF0DF28EC5C8300C480CE /* RoverCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0DE28EC5C8300C480CE /* RoverCamera.swift */; };
+		5EEEF0E128EC5DCC00C480CE /* GetMarsPhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0E028EC5DCC00C480CE /* GetMarsPhotoRequest.swift */; };
+		5EEEF0E628EC64C200C480CE /* GetMarsPhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0E528EC64C200C480CE /* GetMarsPhotoResponse.swift */; };
+		5EEEF0E928EC658700C480CE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0E828EC658700C480CE /* Photo.swift */; };
+		5EEEF0EB28EC65A300C480CE /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0EA28EC65A300C480CE /* Camera.swift */; };
+		5EEEF0ED28EC65B600C480CE /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0EC28EC65B600C480CE /* Rover.swift */; };
+		5EEEF0EF28EC661D00C480CE /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0EE28EC661D00C480CE /* AlertManager.swift */; };
+		5EEEF0F128EC667400C480CE /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */; };
+		5EEEF0F328ED920A00C480CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F228ED920A00C480CE /* Localizable.strings */; };
+		5EEEF0F528ED932A00C480CE /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F428ED932A00C480CE /* loader.json */; };
+		B19D5042CBDBA73D4B5E0608 /* Pods_MarsByCuriosity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50C6346D6524EBE083D83E78 /* Pods-MarsByCuriosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.release.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.release.xcconfig"; sourceTree = "<group>"; };
 		5EEEF09128EC306B00C480CE /* MarsByCuriosity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsByCuriosity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEEF09428EC306B00C480CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EEEF09D28EC306C00C480CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +52,28 @@
 		5EEEF0B228EC36E500C480CE /* dosis.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.light.ttf; sourceTree = "<group>"; };
 		5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		5EEEF0C128EC4A4A00C480CE /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		5EEEF0C428EC4E2200C480CE /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		5EEEF0C628EC4E7500C480CE /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		5EEEF0C828EC4EF200C480CE /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		5EEEF0CA28EC4F4900C480CE /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		5EEEF0CC28EC4F7200C480CE /* ErrorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorInfo.swift; sourceTree = "<group>"; };
+		5EEEF0CE28EC4FF700C480CE /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		5EEEF0D028EC51B200C480CE /* AppHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHUD.swift; sourceTree = "<group>"; };
+		5EEEF0D528EC58C400C480CE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5EEEF0D928EC59E000C480CE /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		5EEEF0DB28EC5A7E00C480CE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5EEEF0DE28EC5C8300C480CE /* RoverCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverCamera.swift; sourceTree = "<group>"; };
+		5EEEF0E028EC5DCC00C480CE /* GetMarsPhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMarsPhotoRequest.swift; sourceTree = "<group>"; };
+		5EEEF0E528EC64C200C480CE /* GetMarsPhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMarsPhotoResponse.swift; sourceTree = "<group>"; };
+		5EEEF0E828EC658700C480CE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		5EEEF0EA28EC65A300C480CE /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		5EEEF0EC28EC65B600C480CE /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
+		5EEEF0EE28EC661D00C480CE /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		5EEEF0F228ED920A00C480CE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		5EEEF0F428ED932A00C480CE /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		A926378F7F093F2273DA91C2 /* Pods-MarsByCuriosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.debug.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.debug.xcconfig"; sourceTree = "<group>"; };
+		F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsByCuriosity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19D5042CBDBA73D4B5E0608 /* Pods_MarsByCuriosity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +93,8 @@
 			children = (
 				5EEEF09328EC306B00C480CE /* MarsByCuriosity */,
 				5EEEF09228EC306B00C480CE /* Products */,
+				8B80832E44AB8F905EE6C49A /* Pods */,
+				A2FF1A6093E2F1B944C44DD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,8 +109,10 @@
 		5EEEF09328EC306B00C480CE /* MarsByCuriosity */ = {
 			isa = PBXGroup;
 			children = (
+				5EEEF0DD28EC5C1700C480CE /* Entities */,
 				5EEEF0B628EC46CA00C480CE /* Extensions */,
 				5EEEF0B928EC474600C480CE /* Helpers */,
+				5EEEF0C328EC4C3600C480CE /* Network */,
 				5EEEF0A928EC313400C480CE /* UI */,
 				5EEEF0A828EC30E600C480CE /* SupportingFiles */,
 			);
@@ -76,9 +125,11 @@
 				5EEEF09428EC306B00C480CE /* AppDelegate.swift */,
 				5EEEF09D28EC306C00C480CE /* Assets.xcassets */,
 				5EEEF0AF28EC36B800C480CE /* Font */,
+				5EEEF0C128EC4A4A00C480CE /* images.xcassets */,
 				5EEEF0A228EC306C00C480CE /* Info.plist */,
 				5EEEF09F28EC306C00C480CE /* LaunchScreen.storyboard */,
-				5EEEF0C128EC4A4A00C480CE /* images.xcassets */,
+				5EEEF0F428ED932A00C480CE /* loader.json */,
+				5EEEF0F228ED920A00C480CE /* Localizable.strings */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -112,7 +163,11 @@
 		5EEEF0B628EC46CA00C480CE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5EEEF0D928EC59E000C480CE /* Int+Extension.swift */,
+				5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */,
 				5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */,
+				5EEEF0C628EC4E7500C480CE /* UIDevice+Extension.swift */,
+				5EEEF0D528EC58C400C480CE /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,8 +175,61 @@
 		5EEEF0B928EC474600C480CE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5EEEF0EE28EC661D00C480CE /* AlertManager.swift */,
+				5EEEF0C428EC4E2200C480CE /* AppConstants.swift */,
+				5EEEF0D028EC51B200C480CE /* AppHUD.swift */,
+				5EEEF0DB28EC5A7E00C480CE /* Colors.swift */,
+				5EEEF0CE28EC4FF700C480CE /* Localization.swift */,
+				5EEEF0C828EC4EF200C480CE /* Logging.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5EEEF0C328EC4C3600C480CE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF0CC28EC4F7200C480CE /* ErrorInfo.swift */,
+				5EEEF0E028EC5DCC00C480CE /* GetMarsPhotoRequest.swift */,
+				5EEEF0CA28EC4F4900C480CE /* NetworkRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5EEEF0DD28EC5C1700C480CE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF0E728EC657800C480CE /* GetMarsPhotoResponse */,
+				5EEEF0DE28EC5C8300C480CE /* RoverCamera.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5EEEF0E728EC657800C480CE /* GetMarsPhotoResponse */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF0EA28EC65A300C480CE /* Camera.swift */,
+				5EEEF0E528EC64C200C480CE /* GetMarsPhotoResponse.swift */,
+				5EEEF0E828EC658700C480CE /* Photo.swift */,
+				5EEEF0EC28EC65B600C480CE /* Rover.swift */,
+			);
+			path = GetMarsPhotoResponse;
+			sourceTree = "<group>";
+		};
+		8B80832E44AB8F905EE6C49A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A926378F7F093F2273DA91C2 /* Pods-MarsByCuriosity.debug.xcconfig */,
+				50C6346D6524EBE083D83E78 /* Pods-MarsByCuriosity.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2FF1A6093E2F1B944C44DD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EEEF0A528EC306C00C480CE /* Build configuration list for PBXNativeTarget "MarsByCuriosity" */;
 			buildPhases = (
+				B42C8FDEB258DA931BB57BCE /* [CP] Check Pods Manifest.lock */,
 				5EEEF08D28EC306B00C480CE /* Sources */,
 				5EEEF08E28EC306B00C480CE /* Frameworks */,
 				5EEEF08F28EC306B00C480CE /* Resources */,
+				F07E9DDAD843585F4F1EC395 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,7 +294,9 @@
 			files = (
 				5EEEF0B428EC36E500C480CE /* dosis.extralight.ttf in Resources */,
 				5EEEF0B328EC36E500C480CE /* dosis.book.ttf in Resources */,
+				5EEEF0F528ED932A00C480CE /* loader.json in Resources */,
 				5EEEF0B528EC36E500C480CE /* dosis.light.ttf in Resources */,
+				5EEEF0F328ED920A00C480CE /* Localizable.strings in Resources */,
 				5EEEF0C228EC4A4A00C480CE /* images.xcassets in Resources */,
 				5EEEF0A128EC306C00C480CE /* LaunchScreen.storyboard in Resources */,
 				5EEEF09E28EC306C00C480CE /* Assets.xcassets in Resources */,
@@ -193,14 +305,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B42C8FDEB258DA931BB57BCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarsByCuriosity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F07E9DDAD843585F4F1EC395 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5EEEF08D28EC306B00C480CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EEEF0DC28EC5A7F00C480CE /* Colors.swift in Sources */,
+				5EEEF0E628EC64C200C480CE /* GetMarsPhotoResponse.swift in Sources */,
+				5EEEF0CD28EC4F7200C480CE /* ErrorInfo.swift in Sources */,
+				5EEEF0CB28EC4F4900C480CE /* NetworkRequest.swift in Sources */,
+				5EEEF0DF28EC5C8300C480CE /* RoverCamera.swift in Sources */,
+				5EEEF0DA28EC59E000C480CE /* Int+Extension.swift in Sources */,
+				5EEEF0D128EC51B200C480CE /* AppHUD.swift in Sources */,
 				5EEEF0AC28EC314D00C480CE /* RootViewController.swift in Sources */,
+				5EEEF0EB28EC65A300C480CE /* Camera.swift in Sources */,
+				5EEEF0C928EC4EF300C480CE /* Logging.swift in Sources */,
+				5EEEF0D628EC58C400C480CE /* UIView+Extension.swift in Sources */,
+				5EEEF0E928EC658700C480CE /* Photo.swift in Sources */,
+				5EEEF0EF28EC661D00C480CE /* AlertManager.swift in Sources */,
+				5EEEF0F128EC667400C480CE /* UIApplication+Extension.swift in Sources */,
+				5EEEF0ED28EC65B600C480CE /* Rover.swift in Sources */,
 				5EEEF09528EC306B00C480CE /* AppDelegate.swift in Sources */,
+				5EEEF0E128EC5DCC00C480CE /* GetMarsPhotoRequest.swift in Sources */,
 				5EEEF0BE28EC47F400C480CE /* UIColor+Extension.swift in Sources */,
+				5EEEF0C728EC4E7500C480CE /* UIDevice+Extension.swift in Sources */,
+				5EEEF0C528EC4E2200C480CE /* AppConstants.swift in Sources */,
+				5EEEF0CF28EC4FF700C480CE /* Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +506,7 @@
 		};
 		5EEEF0A628EC306C00C480CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A926378F7F093F2273DA91C2 /* Pods-MarsByCuriosity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,6 +535,7 @@
 		};
 		5EEEF0A728EC306C00C480CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C6346D6524EBE083D83E78 /* Pods-MarsByCuriosity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
