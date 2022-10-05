@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MarsByCuriosity
+*/
+
+
+"INTERNAL.SERVER.ERROR" = "Internal Server Error";
+"FAILED.TO.LOAD.DATA.ERROR" = "Failed to load data";
+"ERROR" = "Error";
+"ATTENTION" = "Attention";
+"CONTINUE" = "Continue";
+"CANCEL" = "Cancel";
