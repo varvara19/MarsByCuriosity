@@ -11,6 +11,8 @@ final class DashboardViewController: CoreViewController {
     private let imageView = UIImageView(image: UIImage(named: "dashboardImage"))
     private let viewModel = DashboardViewModel()
     
+    private let footerView = FooterViewWithActionButton(buttonTitle: LS("EXPLORE.BUTTON.TITLE"))
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.alwaysBounceVertical = false
@@ -19,6 +21,7 @@ final class DashboardViewController: CoreViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         tableView.registerCell(DashboardTableViewCell.self)
+        tableView.setAndLayoutTableFooterView(footer: footerView)
         return tableView
     }()
     
@@ -28,17 +31,25 @@ final class DashboardViewController: CoreViewController {
         setupNavBar()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        let tableViewHeight = self.tableView.frame.height
+        
+        // size of table + inset from table to button + button height
+        let contentHeight: CGFloat = tableView.contentSize.height * CGFloat(viewModel.sourceArray.count) + 40 + 60.adapted
+
+        let headerHeight: CGFloat = (tableViewHeight - contentHeight) / 2
+        tableView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 0, right: 0)
+    }
+    
     override func addSubviews() {
         view.addSubview(imageView)
         view.addSubview(tableView)
     }
     
     override func setupConstraints() {
-        tableView.snp.makeConstraints {
-            $0.leading.trailing.equalToSuperview()
-            $0.top.lessThanOrEqualToSuperview()
-            $0.centerY.equalToSuperview()
-        }
+        tableView.snp.makeConstraints { $0.edges.equalToSuperview() }
         
         imageView.snp.makeConstraints { $0.leading.trailing.bottom.equalToSuperview() }
     }

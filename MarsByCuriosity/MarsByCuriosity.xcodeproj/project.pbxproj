@@ -46,6 +46,8 @@
 		5EEEF10C28EDA9A800C480CE /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10B28EDA9A800C480CE /* DashboardViewModel.swift */; };
 		5EEEF10E28EDAD3600C480CE /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10D28EDAD3600C480CE /* UITableView+Extension.swift */; };
 		5EEEF11028EDAF1600C480CE /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10F28EDAF1600C480CE /* DateFormatter+Extension.swift */; };
+		5EEEF11728EEE41500C480CE /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF11628EEE41500C480CE /* ActionButton.swift */; };
+		5EEEF11B28EEF06300C480CE /* TableFooterViewWithActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF11A28EEF06300C480CE /* TableFooterViewWithActionButton.swift */; };
 		B19D5042CBDBA73D4B5E0608 /* Pods_MarsByCuriosity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,8 @@
 		5EEEF10B28EDA9A800C480CE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		5EEEF10D28EDAD3600C480CE /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		5EEEF10F28EDAF1600C480CE /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		5EEEF11628EEE41500C480CE /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		5EEEF11A28EEF06300C480CE /* TableFooterViewWithActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFooterViewWithActionButton.swift; sourceTree = "<group>"; };
 		A926378F7F093F2273DA91C2 /* Pods-MarsByCuriosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.debug.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.debug.xcconfig"; sourceTree = "<group>"; };
 		F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsByCuriosity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +137,7 @@
 				5EEEF0DD28EC5C1700C480CE /* Entities */,
 				5EEEF0B628EC46CA00C480CE /* Extensions */,
 				5EEEF0B928EC474600C480CE /* Helpers */,
+				5EEEF11828EEF02400C480CE /* Libraries */,
 				5EEEF0C328EC4C3600C480CE /* Network */,
 				5EEEF0A928EC313400C480CE /* UI */,
 				5EEEF0A828EC30E600C480CE /* SupportingFiles */,
@@ -244,9 +249,10 @@
 		5EEEF0F628ED966100C480CE /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				5EEEF10828EDA43D00C480CE /* ViewModels */,
-				5EEEF0F728ED967200C480CE /* DashboardViewController.swift */,
 				5EEEF10228EDA30300C480CE /* DashboardTableViewCell.swift */,
+				5EEEF0F728ED967200C480CE /* DashboardViewController.swift */,
+				5EEEF11A28EEF06300C480CE /* TableFooterViewWithActionButton.swift */,
+				5EEEF10828EDA43D00C480CE /* ViewModels */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -267,6 +273,22 @@
 				5EEEF10B28EDA9A800C480CE /* DashboardViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5EEEF11828EEF02400C480CE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF11928EEF04500C480CE /* UI */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		5EEEF11928EEF04500C480CE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF11628EEE41500C480CE /* ActionButton.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		8B80832E44AB8F905EE6C49A /* Pods */ = {
@@ -408,11 +430,13 @@
 			files = (
 				5EEEF0FB28ED969B00C480CE /* CoreViewController.swift in Sources */,
 				5EEEF10C28EDA9A800C480CE /* DashboardViewModel.swift in Sources */,
+				5EEEF11B28EEF06300C480CE /* TableFooterViewWithActionButton.swift in Sources */,
 				5EEEF0DC28EC5A7F00C480CE /* Colors.swift in Sources */,
 				5EEEF0E628EC64C200C480CE /* GetMarsPhotoResponse.swift in Sources */,
 				5EEEF0FD28ED994600C480CE /* FontFactory.swift in Sources */,
 				5EEEF0CD28EC4F7200C480CE /* ErrorInfo.swift in Sources */,
 				5EEEF0CB28EC4F4900C480CE /* NetworkRequest.swift in Sources */,
+				5EEEF11728EEE41500C480CE /* ActionButton.swift in Sources */,
 				5EEEF0DF28EC5C8300C480CE /* RoverCamera.swift in Sources */,
 				5EEEF0DA28EC59E000C480CE /* Int+Extension.swift in Sources */,
 				5EEEF0D128EC51B200C480CE /* AppHUD.swift in Sources */,

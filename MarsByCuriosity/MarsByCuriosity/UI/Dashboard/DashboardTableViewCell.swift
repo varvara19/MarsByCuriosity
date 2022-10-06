@@ -68,7 +68,7 @@ final class DashboardTableViewCell: UITableViewCell {
     
     private func generalSetup() {
         containerView.backgroundColor = .cellBackgroundColor
-        containerView.layer.cornerRadius = 10
+        containerView.layer.cornerRadius = AppConstants.cornerRadius
         
         backgroundColor = .clear
         selectionStyle = .none

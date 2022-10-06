@@ -48,4 +48,22 @@ extension UITableView {
     func dequeueReusableCell<T:UITableViewCell> (for indexPath: IndexPath) -> T {
         return self.dequeueReusableCell(withIdentifier: T.reuse_id(), for: indexPath) as! T
     }
+    
+    func setAndLayoutTableFooterView(footer: UIView?) {
+        self.tableFooterView = footer
+        
+        guard let footer = footer else { return }
+        
+        footer.setNeedsLayout()
+        footer.layoutIfNeeded()
+        // If value is layoutFittingExpandedSize, then buttons stop responding to touches
+        let sizeFitting = footer.systemLayoutSizeFitting(CGSize(width: self.bounds.width, height: 0))
+        //let sizeFitting = footer.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+        
+        // MARK: It was discovered experimentally. This is necessary for button to work (eg RegistrationByProductViewController)
+        let height = sizeFitting.height// + 50
+        let width = sizeFitting.width
+        footer.frame.size = CGSize(width: width, height: height)
+        self.tableFooterView = footer
+    }
 }
