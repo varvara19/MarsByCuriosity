@@ -17,12 +17,12 @@ final class AppHUD {
     var lastHUD: AnimationView?
     
     var animationDuration = AppConstants.animationDuration
-    var backgroundColor = UIColor.backgroundColor
+    var backgroundColor = UIColor.hudBackgroundColor.withAlphaComponent(0.3)
     
     var hud: AnimationView {
         let animationView = AnimationView(name: "loader")
         animationView.loopMode = .loop
-        animationView.snp.makeConstraints { $0.width.height.equalTo(48.adapted) }
+        animationView.snp.makeConstraints { $0.width.height.equalTo(200.adapted) }
         return animationView
     }
     

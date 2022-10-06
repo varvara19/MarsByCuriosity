@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E1B2DA428EF235D00DDD188 /* ChooseDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B2DA328EF235D00DDD188 /* ChooseDateViewController.swift */; };
+		5E1B2DA628EF695A00DDD188 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E1B2DA528EF695A00DDD188 /* loader.json */; };
 		5EB1695B28EF1779003F3FD4 /* ChooseValueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */; };
 		5EB1695E28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */; };
 		5EB1696028EF1B78003F3FD4 /* ChooseValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */; };
@@ -37,7 +38,6 @@
 		5EEEF0EF28EC661D00C480CE /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0EE28EC661D00C480CE /* AlertManager.swift */; };
 		5EEEF0F128EC667400C480CE /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */; };
 		5EEEF0F328ED920A00C480CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F228ED920A00C480CE /* Localizable.strings */; };
-		5EEEF0F528ED932A00C480CE /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F428ED932A00C480CE /* loader.json */; };
 		5EEEF0F828ED967200C480CE /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0F728ED967200C480CE /* DashboardViewController.swift */; };
 		5EEEF0FB28ED969B00C480CE /* CoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0FA28ED969B00C480CE /* CoreViewController.swift */; };
 		5EEEF0FD28ED994600C480CE /* FontFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0FC28ED994600C480CE /* FontFactory.swift */; };
@@ -61,6 +61,7 @@
 /* Begin PBXFileReference section */
 		50C6346D6524EBE083D83E78 /* Pods-MarsByCuriosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.release.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.release.xcconfig"; sourceTree = "<group>"; };
 		5E1B2DA328EF235D00DDD188 /* ChooseDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDateViewController.swift; sourceTree = "<group>"; };
+		5E1B2DA528EF695A00DDD188 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueViewModel.swift; sourceTree = "<group>"; };
 		5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelController.swift; sourceTree = "<group>"; };
 		5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueTableViewCell.swift; sourceTree = "<group>"; };
@@ -92,7 +93,6 @@
 		5EEEF0EE28EC661D00C480CE /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		5EEEF0F228ED920A00C480CE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		5EEEF0F428ED932A00C480CE /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		5EEEF0F728ED967200C480CE /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		5EEEF0FA28ED969B00C480CE /* CoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreViewController.swift; sourceTree = "<group>"; };
 		5EEEF0FC28ED994600C480CE /* FontFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFactory.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 				5EEEF0C128EC4A4A00C480CE /* images.xcassets */,
 				5EEEF0A228EC306C00C480CE /* Info.plist */,
 				5EEEF09F28EC306C00C480CE /* LaunchScreen.storyboard */,
-				5EEEF0F428ED932A00C480CE /* loader.json */,
+				5E1B2DA528EF695A00DDD188 /* loader.json */,
 				5EEEF0F228ED920A00C480CE /* Localizable.strings */,
 			);
 			path = SupportingFiles;
@@ -422,8 +422,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEEF10528EDA33A00C480CE /* dosis.book.ttf in Resources */,
-				5EEEF0F528ED932A00C480CE /* loader.json in Resources */,
 				5EEEF0B528EC36E500C480CE /* dosis.light.ttf in Resources */,
+				5E1B2DA628EF695A00DDD188 /* loader.json in Resources */,
 				5EEEF0F328ED920A00C480CE /* Localizable.strings in Resources */,
 				5EEEF10128ED9D6800C480CE /* dosis.semibold.ttf in Resources */,
 				5EEEF0C228EC4A4A00C480CE /* images.xcassets in Resources */,
