@@ -10,7 +10,7 @@ final class FloatingPanelHeaderView: UIView {
     private enum Dimensions {
         static let sideSpacing: CGFloat = 16
         static let topInset: CGFloat = 8
-        static let imageViewHeight: CGFloat = 24
+        static let imageViewHeight: CGFloat = 24.adapted
     }
     
     private let imageView = UIImageView()

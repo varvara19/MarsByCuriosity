@@ -6,7 +6,7 @@
 
 import UIKit
 
-protocol ChooseValueTableViewControllerDelegate: AnyObject {
+protocol ChooseValueDelegate: AnyObject {
     func valueDidSelected(value: String)
 }
 
@@ -15,7 +15,7 @@ final class ChooseValueTableViewController: CoreViewController {
         static let bottomInset: CGFloat = 8
     }
     
-    weak var chooseDelegate: ChooseValueTableViewControllerDelegate?
+    weak var chooseDelegate: ChooseValueDelegate?
     
     private let viewModel: ChooseValueViewModel
     private lazy var headerView = FloatingPanelHeaderView(title: viewModel.title, iconName: "dropdown")
@@ -32,7 +32,7 @@ final class ChooseValueTableViewController: CoreViewController {
         return tableView
     }()
     
-    init(viewModel: ChooseValueViewModel, chooseDelegate:ChooseValueTableViewControllerDelegate ) {
+    init(viewModel: ChooseValueViewModel, chooseDelegate:ChooseValueDelegate ) {
         self.viewModel = viewModel
         self.chooseDelegate = chooseDelegate
         

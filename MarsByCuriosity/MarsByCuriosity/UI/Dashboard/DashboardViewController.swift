@@ -15,7 +15,7 @@ final class DashboardViewController: CoreViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.alwaysBounceVertical = false
+        tableView.alwaysBounceVertical = true
         tableView.backgroundColor = .clear
         tableView.delegate = self
         tableView.dataSource = self

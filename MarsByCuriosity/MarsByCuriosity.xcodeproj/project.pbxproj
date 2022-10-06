@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1B2DA428EF235D00DDD188 /* ChooseDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B2DA328EF235D00DDD188 /* ChooseDateViewController.swift */; };
 		5EB1695B28EF1779003F3FD4 /* ChooseValueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */; };
 		5EB1695E28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */; };
 		5EB1696028EF1B78003F3FD4 /* ChooseValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		50C6346D6524EBE083D83E78 /* Pods-MarsByCuriosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.release.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.release.xcconfig"; sourceTree = "<group>"; };
+		5E1B2DA328EF235D00DDD188 /* ChooseDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDateViewController.swift; sourceTree = "<group>"; };
 		5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueViewModel.swift; sourceTree = "<group>"; };
 		5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelController.swift; sourceTree = "<group>"; };
 		5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueTableViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 				5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */,
 			);
 			path = ChooseValueTableViewController;
+			sourceTree = "<group>";
+		};
+		5EB1696128EF232F003F3FD4 /* ChooseDateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B2DA328EF235D00DDD188 /* ChooseDateViewController.swift */,
+			);
+			path = ChooseDateViewController;
 			sourceTree = "<group>";
 		};
 		5EEEF08828EC306B00C480CE = {
@@ -309,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				5EEEF11C28EF0DC600C480CE /* Buttons */,
+				5EB1696128EF232F003F3FD4 /* ChooseDateViewController */,
 				5EB1695C28EF1807003F3FD4 /* ChooseValueTableViewController */,
 				5EEEF12928EF124A00C480CE /* FloatingPanel */,
 			);
@@ -485,6 +496,7 @@
 				5EEEF0DA28EC59E000C480CE /* Int+Extension.swift in Sources */,
 				5EEEF0D128EC51B200C480CE /* AppHUD.swift in Sources */,
 				5EEEF0AC28EC314D00C480CE /* RootViewController.swift in Sources */,
+				5E1B2DA428EF235D00DDD188 /* ChooseDateViewController.swift in Sources */,
 				5EEEF10328EDA30300C480CE /* DashboardTableViewCell.swift in Sources */,
 				5EEEF0EB28EC65A300C480CE /* Camera.swift in Sources */,
 				5EEEF0C928EC4EF300C480CE /* Logging.swift in Sources */,

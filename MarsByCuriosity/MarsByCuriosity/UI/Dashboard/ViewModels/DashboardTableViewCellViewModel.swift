@@ -14,6 +14,8 @@ protocol DashboardTableViewCellViewModelDelegate: AnyObject {
 }
 
 final class DashboardTableViewCellViewModel {
+    private let floatingPanelController = CustomFloatingPanelController()
+    
     let title: String
     let type: DashboardViewModel.DashboardCellType
     
@@ -23,7 +25,7 @@ final class DashboardTableViewCellViewModel {
     var defaultValue: String {
         switch type {
             case .date:
-                return DateFormatter.string(fromDate: Date(), with: "MMM d, yyyy") ?? ""
+                return DateFormatter.string(fromDate: Date(), with: AppConstants.displayableDateFormat) ?? ""
             case .selectionRoverCamera:
                 return RoverCamera.FHAZ.title
         }
@@ -37,9 +39,13 @@ final class DashboardTableViewCellViewModel {
     func didSelectNewValue() {
         switch type {
             case .date:
-                break
+                guard let date = DateFormatter.date(fromString: selectedValue ?? defaultValue, with: AppConstants.displayableDateFormat) else { return }
+                
+                let contentViewController = ChooseDateViewController(chooseDelegate: self, selectedDate: date)
+                floatingPanelController.set(contentViewController: contentViewController)
+                
+                UIApplication.present(presentVC: floatingPanelController)
             case .selectionRoverCamera:
-                let floatingPanelController = CustomFloatingPanelController()
                 
                 let sourceArray = RoverCamera.allCases.map { $0.title }
                 
@@ -52,7 +58,7 @@ final class DashboardTableViewCellViewModel {
 }
 
 // MARK: - ChooseValueTableViewControllerDelegate
-extension DashboardTableViewCellViewModel: ChooseValueTableViewControllerDelegate {
+extension DashboardTableViewCellViewModel: ChooseValueDelegate {
     func valueDidSelected(value: String) {
         selectedValue = value
         delegate?.reloadData()
