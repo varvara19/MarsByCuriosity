@@ -7,5 +7,6 @@ target 'MarsByCuriosity' do
 
   pod 'lottie-ios'
   pod 'SnapKit'
+  pod 'FloatingPanel'
 
 end

@@ -16,11 +16,11 @@ final class DashboardTableViewCell: UITableViewCell {
         static let containerViewTopInset: CGFloat = 7
     }
     
-    private let titleLabel = UILabel(font: .system(ofSize: 14), textColor: .appBlack, textAlignment: .left, numberOfLines: 0)
+    private let titleLabel = UILabel(font: .system(ofSize: 14), textColor: .appBlack, textAlignment: .left, numberOfLines: 1)
     
     private let containerView = UIView()
     private let iconTypeImageView = UIImageView()
-    private let valueLabel = UILabel(font: .system(ofSize: 18), textColor: .appBlack, textAlignment: .left, numberOfLines: 0)
+    private let valueLabel = UILabel(font: .system(ofSize: 18), textColor: .appBlack, textAlignment: .left, numberOfLines: 1)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -76,7 +76,7 @@ final class DashboardTableViewCell: UITableViewCell {
     
     func updateWith(entity: DashboardTableViewCellViewModel) {
         titleLabel.text = entity.title
-        valueLabel.text = entity.defaultValue
+        valueLabel.text = entity.selectedValue ?? entity.defaultValue
 
         iconTypeImageView.image = UIImage(named: entity.type.iconName)
     }

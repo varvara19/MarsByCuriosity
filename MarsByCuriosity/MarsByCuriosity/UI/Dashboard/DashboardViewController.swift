@@ -9,7 +9,7 @@ import SnapKit
 
 final class DashboardViewController: CoreViewController {
     private let imageView = UIImageView(image: UIImage(named: "dashboardImage"))
-    private let viewModel = DashboardViewModel()
+    private lazy var viewModel = DashboardViewModel(delegate: self)
     
     private let footerView = FooterViewWithActionButton(buttonTitle: LS("EXPLORE.BUTTON.TITLE"))
     
@@ -37,7 +37,7 @@ final class DashboardViewController: CoreViewController {
         let tableViewHeight = self.tableView.frame.height
         
         // size of table + inset from table to button + button height
-        let contentHeight: CGFloat = tableView.contentSize.height * CGFloat(viewModel.sourceArray.count) + 40 + 60.adapted
+        let contentHeight: CGFloat = tableView.contentSize.height  + 40 + 60.adapted
 
         let headerHeight: CGFloat = (tableViewHeight - contentHeight) / 2
         tableView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 0, right: 0)
@@ -77,5 +77,12 @@ extension DashboardViewController: UITableViewDataSource {
         cell.updateWith(entity: viewModel.sourceArray[indexPath.row])
         
         return cell
+    }
+}
+
+// MARK: - DashboardViewModelDelegate
+extension DashboardViewController: DashboardViewModelDelegate {
+    func reloadData() {
+        tableView.reloadData()
     }
 }

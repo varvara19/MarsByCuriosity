@@ -6,6 +6,10 @@
 
 import Foundation
 
+protocol DashboardViewModelDelegate: AnyObject {
+    func reloadData()
+}
+
 final class DashboardViewModel {
     enum DashboardCellType {
         case date
@@ -26,18 +30,30 @@ final class DashboardViewModel {
         }
     }
     
+    weak var delegate: DashboardViewModelDelegate?
     var sourceArray = [DashboardTableViewCellViewModel]()
     
-    init() {
+    init(delegate: DashboardViewModelDelegate?) {
+        self.delegate = delegate
+        
         configSourceArray()
     }
     
     private func configSourceArray() {
         sourceArray.append(DashboardTableViewCellViewModel(type: .selectionRoverCamera))
         sourceArray.append(DashboardTableViewCellViewModel(type: .date))
+        
+        sourceArray.forEach { $0.delegate = self }
     }
     
     func didSelectRowAt(indexPath: IndexPath) {
         sourceArray[indexPath.row].didSelectNewValue()
+    }
+}
+
+// MARK: - DashboardTableViewCellViewModelDelegate
+extension DashboardViewModel: DashboardTableViewCellViewModelDelegate {
+    func reloadData() {
+        delegate?.reloadData()
     }
 }

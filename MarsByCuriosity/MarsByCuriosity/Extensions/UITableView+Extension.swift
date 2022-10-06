@@ -56,14 +56,23 @@ extension UITableView {
         
         footer.setNeedsLayout()
         footer.layoutIfNeeded()
-        // If value is layoutFittingExpandedSize, then buttons stop responding to touches
-        let sizeFitting = footer.systemLayoutSizeFitting(CGSize(width: self.bounds.width, height: 0))
-        //let sizeFitting = footer.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
         
-        // MARK: It was discovered experimentally. This is necessary for button to work (eg RegistrationByProductViewController)
-        let height = sizeFitting.height// + 50
+        let sizeFitting = footer.systemLayoutSizeFitting(CGSize(width: self.bounds.width, height: 0))
+
+        let height = sizeFitting.height
         let width = sizeFitting.width
         footer.frame.size = CGSize(width: width, height: height)
         self.tableFooterView = footer
+    }
+    
+    func setAndLayoutTableHeaderView(header: UIView?) {
+        self.tableHeaderView = header
+        
+        guard let header = header else { return }
+        
+        header.setNeedsLayout()
+        header.layoutIfNeeded()
+        header.frame.size = header.systemLayoutSizeFitting(CGSize(width: self.bounds.width, height: 0))
+        self.tableHeaderView = header
     }
 }

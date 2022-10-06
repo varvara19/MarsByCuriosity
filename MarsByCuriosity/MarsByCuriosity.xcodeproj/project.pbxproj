@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EB1695B28EF1779003F3FD4 /* ChooseValueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */; };
+		5EB1695E28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */; };
+		5EB1696028EF1B78003F3FD4 /* ChooseValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */; };
 		5EEEF09528EC306B00C480CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF09428EC306B00C480CE /* AppDelegate.swift */; };
 		5EEEF09E28EC306C00C480CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09D28EC306C00C480CE /* Assets.xcassets */; };
 		5EEEF0A128EC306C00C480CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09F28EC306C00C480CE /* LaunchScreen.storyboard */; };
@@ -48,11 +51,17 @@
 		5EEEF11028EDAF1600C480CE /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10F28EDAF1600C480CE /* DateFormatter+Extension.swift */; };
 		5EEEF11728EEE41500C480CE /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF11628EEE41500C480CE /* ActionButton.swift */; };
 		5EEEF11B28EEF06300C480CE /* TableFooterViewWithActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF11A28EEF06300C480CE /* TableFooterViewWithActionButton.swift */; };
+		5EEEF12B28EF129000C480CE /* MarsByCuriosityFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF12A28EF129000C480CE /* MarsByCuriosityFloatingPanelLayout.swift */; };
+		5EEEF12D28EF137900C480CE /* FloatingPanelHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF12C28EF137900C480CE /* FloatingPanelHeaderView.swift */; };
+		5EEEF12F28EF14E600C480CE /* ChooseValueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF12E28EF14E600C480CE /* ChooseValueTableViewController.swift */; };
 		B19D5042CBDBA73D4B5E0608 /* Pods_MarsByCuriosity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50C6346D6524EBE083D83E78 /* Pods-MarsByCuriosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.release.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.release.xcconfig"; sourceTree = "<group>"; };
+		5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueViewModel.swift; sourceTree = "<group>"; };
+		5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelController.swift; sourceTree = "<group>"; };
+		5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueTableViewCell.swift; sourceTree = "<group>"; };
 		5EEEF09128EC306B00C480CE /* MarsByCuriosity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsByCuriosity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEEF09428EC306B00C480CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EEEF09D28EC306C00C480CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +105,9 @@
 		5EEEF10F28EDAF1600C480CE /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		5EEEF11628EEE41500C480CE /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		5EEEF11A28EEF06300C480CE /* TableFooterViewWithActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFooterViewWithActionButton.swift; sourceTree = "<group>"; };
+		5EEEF12A28EF129000C480CE /* MarsByCuriosityFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsByCuriosityFloatingPanelLayout.swift; sourceTree = "<group>"; };
+		5EEEF12C28EF137900C480CE /* FloatingPanelHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelHeaderView.swift; sourceTree = "<group>"; };
+		5EEEF12E28EF14E600C480CE /* ChooseValueTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueTableViewController.swift; sourceTree = "<group>"; };
 		A926378F7F093F2273DA91C2 /* Pods-MarsByCuriosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.debug.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.debug.xcconfig"; sourceTree = "<group>"; };
 		F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsByCuriosity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,6 +124,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EB1695C28EF1807003F3FD4 /* ChooseValueTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */,
+				5EEEF12E28EF14E600C480CE /* ChooseValueTableViewController.swift */,
+				5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */,
+			);
+			path = ChooseValueTableViewController;
+			sourceTree = "<group>";
+		};
 		5EEEF08828EC306B00C480CE = {
 			isa = PBXGroup;
 			children = (
@@ -286,9 +308,29 @@
 		5EEEF11928EEF04500C480CE /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5EEEF11628EEE41500C480CE /* ActionButton.swift */,
+				5EEEF11C28EF0DC600C480CE /* Buttons */,
+				5EB1695C28EF1807003F3FD4 /* ChooseValueTableViewController */,
+				5EEEF12928EF124A00C480CE /* FloatingPanel */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		5EEEF11C28EF0DC600C480CE /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF11628EEE41500C480CE /* ActionButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		5EEEF12928EF124A00C480CE /* FloatingPanel */ = {
+			isa = PBXGroup;
+			children = (
+				5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */,
+				5EEEF12C28EF137900C480CE /* FloatingPanelHeaderView.swift */,
+				5EEEF12A28EF129000C480CE /* MarsByCuriosityFloatingPanelLayout.swift */,
+			);
+			path = FloatingPanel;
 			sourceTree = "<group>";
 		};
 		8B80832E44AB8F905EE6C49A /* Pods */ = {
@@ -428,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB1696028EF1B78003F3FD4 /* ChooseValueTableViewCell.swift in Sources */,
 				5EEEF0FB28ED969B00C480CE /* CoreViewController.swift in Sources */,
 				5EEEF10C28EDA9A800C480CE /* DashboardViewModel.swift in Sources */,
 				5EEEF11B28EEF06300C480CE /* TableFooterViewWithActionButton.swift in Sources */,
@@ -436,6 +479,7 @@
 				5EEEF0FD28ED994600C480CE /* FontFactory.swift in Sources */,
 				5EEEF0CD28EC4F7200C480CE /* ErrorInfo.swift in Sources */,
 				5EEEF0CB28EC4F4900C480CE /* NetworkRequest.swift in Sources */,
+				5EEEF12F28EF14E600C480CE /* ChooseValueTableViewController.swift in Sources */,
 				5EEEF11728EEE41500C480CE /* ActionButton.swift in Sources */,
 				5EEEF0DF28EC5C8300C480CE /* RoverCamera.swift in Sources */,
 				5EEEF0DA28EC59E000C480CE /* Int+Extension.swift in Sources */,
@@ -448,16 +492,20 @@
 				5EEEF0E928EC658700C480CE /* Photo.swift in Sources */,
 				5EEEF0EF28EC661D00C480CE /* AlertManager.swift in Sources */,
 				5EEEF10E28EDAD3600C480CE /* UITableView+Extension.swift in Sources */,
+				5EB1695E28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift in Sources */,
 				5EEEF0F128EC667400C480CE /* UIApplication+Extension.swift in Sources */,
 				5EEEF10728EDA3BE00C480CE /* UILabel+Extension.swift in Sources */,
 				5EEEF0ED28EC65B600C480CE /* Rover.swift in Sources */,
 				5EEEF10A28EDA94D00C480CE /* DashboardTableViewCellViewModel.swift in Sources */,
+				5EEEF12B28EF129000C480CE /* MarsByCuriosityFloatingPanelLayout.swift in Sources */,
+				5EB1695B28EF1779003F3FD4 /* ChooseValueViewModel.swift in Sources */,
 				5EEEF09528EC306B00C480CE /* AppDelegate.swift in Sources */,
 				5EEEF0FF28ED9A1F00C480CE /* UIFont+Extension.swift in Sources */,
 				5EEEF0E128EC5DCC00C480CE /* GetMarsPhotoRequest.swift in Sources */,
 				5EEEF0BE28EC47F400C480CE /* UIColor+Extension.swift in Sources */,
 				5EEEF0C728EC4E7500C480CE /* UIDevice+Extension.swift in Sources */,
 				5EEEF11028EDAF1600C480CE /* DateFormatter+Extension.swift in Sources */,
+				5EEEF12D28EF137900C480CE /* FloatingPanelHeaderView.swift in Sources */,
 				5EEEF0F828ED967200C480CE /* DashboardViewController.swift in Sources */,
 				5EEEF0C528EC4E2200C480CE /* AppConstants.swift in Sources */,
 				5EEEF0CF28EC4FF700C480CE /* Localization.swift in Sources */,
