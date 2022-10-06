@@ -11,3 +11,5 @@
 "CONTINUE" = "Continue";
 "CANCEL" = "Cancel";
 "DASHBOARD.TITLE" = "Select Camera and Date";
+"DATE.TITLE" = "Date";
+"ROVER.CAMERA.TITLE" = "Rover Camera";

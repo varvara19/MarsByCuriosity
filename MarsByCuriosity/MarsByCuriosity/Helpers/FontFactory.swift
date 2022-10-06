@@ -28,7 +28,7 @@ final class FontFactory {
     }
     
     static func system(ofSize size: CGFloat) -> UIFont {
-        guard let font = UIFont(name: "Dosis-Light", size: size) else {
+        guard let font = UIFont(name: "Dosis-Book", size: size) else {
             print("Font dosis.light not find!")
             return UIFont.systemFont(ofSize: size, weight: .regular)
         }
@@ -37,7 +37,7 @@ final class FontFactory {
     }
     
     static func light(ofSize size: CGFloat) -> UIFont {
-        guard let font = UIFont(name: "Dosis-ExtraLight", size: size) else {
+        guard let font = UIFont(name: "Dosis-Light", size: size) else {
             print("Font dosis.extralight not find!")
             return UIFont.systemFont(ofSize: size, weight: .light)
         }

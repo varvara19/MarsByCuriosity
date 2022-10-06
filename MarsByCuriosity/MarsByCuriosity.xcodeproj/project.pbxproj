@@ -11,7 +11,6 @@
 		5EEEF09E28EC306C00C480CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09D28EC306C00C480CE /* Assets.xcassets */; };
 		5EEEF0A128EC306C00C480CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09F28EC306C00C480CE /* LaunchScreen.storyboard */; };
 		5EEEF0AC28EC314D00C480CE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0AB28EC314D00C480CE /* RootViewController.swift */; };
-		5EEEF0B428EC36E500C480CE /* dosis.extralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0B128EC36E500C480CE /* dosis.extralight.ttf */; };
 		5EEEF0B528EC36E500C480CE /* dosis.light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0B228EC36E500C480CE /* dosis.light.ttf */; };
 		5EEEF0BE28EC47F400C480CE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */; };
 		5EEEF0C228EC4A4A00C480CE /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF0C128EC4A4A00C480CE /* images.xcassets */; };
@@ -40,6 +39,13 @@
 		5EEEF0FD28ED994600C480CE /* FontFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0FC28ED994600C480CE /* FontFactory.swift */; };
 		5EEEF0FF28ED9A1F00C480CE /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF0FE28ED9A1F00C480CE /* UIFont+Extension.swift */; };
 		5EEEF10128ED9D6800C480CE /* dosis.semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF10028ED9D6800C480CE /* dosis.semibold.ttf */; };
+		5EEEF10328EDA30300C480CE /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10228EDA30300C480CE /* DashboardTableViewCell.swift */; };
+		5EEEF10528EDA33A00C480CE /* dosis.book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF10428EDA33A00C480CE /* dosis.book.ttf */; };
+		5EEEF10728EDA3BE00C480CE /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10628EDA3BE00C480CE /* UILabel+Extension.swift */; };
+		5EEEF10A28EDA94D00C480CE /* DashboardTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10928EDA94D00C480CE /* DashboardTableViewCellViewModel.swift */; };
+		5EEEF10C28EDA9A800C480CE /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10B28EDA9A800C480CE /* DashboardViewModel.swift */; };
+		5EEEF10E28EDAD3600C480CE /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10D28EDAD3600C480CE /* UITableView+Extension.swift */; };
+		5EEEF11028EDAF1600C480CE /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF10F28EDAF1600C480CE /* DateFormatter+Extension.swift */; };
 		B19D5042CBDBA73D4B5E0608 /* Pods_MarsByCuriosity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +57,6 @@
 		5EEEF0A028EC306C00C480CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EEEF0A228EC306C00C480CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EEEF0AB28EC314D00C480CE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		5EEEF0B128EC36E500C480CE /* dosis.extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.extralight.ttf; sourceTree = "<group>"; };
 		5EEEF0B228EC36E500C480CE /* dosis.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.light.ttf; sourceTree = "<group>"; };
 		5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		5EEEF0C128EC4A4A00C480CE /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
@@ -80,6 +85,13 @@
 		5EEEF0FC28ED994600C480CE /* FontFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFactory.swift; sourceTree = "<group>"; };
 		5EEEF0FE28ED9A1F00C480CE /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		5EEEF10028ED9D6800C480CE /* dosis.semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.semibold.ttf; sourceTree = "<group>"; };
+		5EEEF10228EDA30300C480CE /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		5EEEF10428EDA33A00C480CE /* dosis.book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dosis.book.ttf; sourceTree = "<group>"; };
+		5EEEF10628EDA3BE00C480CE /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		5EEEF10928EDA94D00C480CE /* DashboardTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		5EEEF10B28EDA9A800C480CE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		5EEEF10D28EDAD3600C480CE /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		5EEEF10F28EDAF1600C480CE /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		A926378F7F093F2273DA91C2 /* Pods-MarsByCuriosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.debug.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.debug.xcconfig"; sourceTree = "<group>"; };
 		F3055637AEA64FED3C4E7B14 /* Pods_MarsByCuriosity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsByCuriosity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,7 +174,7 @@
 		5EEEF0AF28EC36B800C480CE /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				5EEEF0B128EC36E500C480CE /* dosis.extralight.ttf */,
+				5EEEF10428EDA33A00C480CE /* dosis.book.ttf */,
 				5EEEF0B228EC36E500C480CE /* dosis.light.ttf */,
 				5EEEF10028ED9D6800C480CE /* dosis.semibold.ttf */,
 			);
@@ -172,11 +184,14 @@
 		5EEEF0B628EC46CA00C480CE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5EEEF10F28EDAF1600C480CE /* DateFormatter+Extension.swift */,
 				5EEEF0D928EC59E000C480CE /* Int+Extension.swift */,
 				5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */,
 				5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */,
 				5EEEF0C628EC4E7500C480CE /* UIDevice+Extension.swift */,
 				5EEEF0FE28ED9A1F00C480CE /* UIFont+Extension.swift */,
+				5EEEF10628EDA3BE00C480CE /* UILabel+Extension.swift */,
+				5EEEF10D28EDAD3600C480CE /* UITableView+Extension.swift */,
 				5EEEF0D528EC58C400C480CE /* UIView+Extension.swift */,
 			);
 			path = Extensions;
@@ -229,7 +244,9 @@
 		5EEEF0F628ED966100C480CE /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				5EEEF10828EDA43D00C480CE /* ViewModels */,
 				5EEEF0F728ED967200C480CE /* DashboardViewController.swift */,
+				5EEEF10228EDA30300C480CE /* DashboardTableViewCell.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -241,6 +258,15 @@
 				5EEEF0FA28ED969B00C480CE /* CoreViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		5EEEF10828EDA43D00C480CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5EEEF10928EDA94D00C480CE /* DashboardTableViewCellViewModel.swift */,
+				5EEEF10B28EDA9A800C480CE /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		8B80832E44AB8F905EE6C49A /* Pods */ = {
@@ -320,7 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EEEF0B428EC36E500C480CE /* dosis.extralight.ttf in Resources */,
+				5EEEF10528EDA33A00C480CE /* dosis.book.ttf in Resources */,
 				5EEEF0F528ED932A00C480CE /* loader.json in Resources */,
 				5EEEF0B528EC36E500C480CE /* dosis.light.ttf in Resources */,
 				5EEEF0F328ED920A00C480CE /* Localizable.strings in Resources */,
@@ -381,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEEF0FB28ED969B00C480CE /* CoreViewController.swift in Sources */,
+				5EEEF10C28EDA9A800C480CE /* DashboardViewModel.swift in Sources */,
 				5EEEF0DC28EC5A7F00C480CE /* Colors.swift in Sources */,
 				5EEEF0E628EC64C200C480CE /* GetMarsPhotoResponse.swift in Sources */,
 				5EEEF0FD28ED994600C480CE /* FontFactory.swift in Sources */,
@@ -390,18 +417,23 @@
 				5EEEF0DA28EC59E000C480CE /* Int+Extension.swift in Sources */,
 				5EEEF0D128EC51B200C480CE /* AppHUD.swift in Sources */,
 				5EEEF0AC28EC314D00C480CE /* RootViewController.swift in Sources */,
+				5EEEF10328EDA30300C480CE /* DashboardTableViewCell.swift in Sources */,
 				5EEEF0EB28EC65A300C480CE /* Camera.swift in Sources */,
 				5EEEF0C928EC4EF300C480CE /* Logging.swift in Sources */,
 				5EEEF0D628EC58C400C480CE /* UIView+Extension.swift in Sources */,
 				5EEEF0E928EC658700C480CE /* Photo.swift in Sources */,
 				5EEEF0EF28EC661D00C480CE /* AlertManager.swift in Sources */,
+				5EEEF10E28EDAD3600C480CE /* UITableView+Extension.swift in Sources */,
 				5EEEF0F128EC667400C480CE /* UIApplication+Extension.swift in Sources */,
+				5EEEF10728EDA3BE00C480CE /* UILabel+Extension.swift in Sources */,
 				5EEEF0ED28EC65B600C480CE /* Rover.swift in Sources */,
+				5EEEF10A28EDA94D00C480CE /* DashboardTableViewCellViewModel.swift in Sources */,
 				5EEEF09528EC306B00C480CE /* AppDelegate.swift in Sources */,
 				5EEEF0FF28ED9A1F00C480CE /* UIFont+Extension.swift in Sources */,
 				5EEEF0E128EC5DCC00C480CE /* GetMarsPhotoRequest.swift in Sources */,
 				5EEEF0BE28EC47F400C480CE /* UIColor+Extension.swift in Sources */,
 				5EEEF0C728EC4E7500C480CE /* UIDevice+Extension.swift in Sources */,
+				5EEEF11028EDAF1600C480CE /* DateFormatter+Extension.swift in Sources */,
 				5EEEF0F828ED967200C480CE /* DashboardViewController.swift in Sources */,
 				5EEEF0C528EC4E2200C480CE /* AppConstants.swift in Sources */,
 				5EEEF0CF28EC4FF700C480CE /* Localization.swift in Sources */,
