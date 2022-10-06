@@ -6,7 +6,7 @@
 
 import Foundation
 
-enum RoverCamera: String {
+enum RoverCamera: String, CaseIterable {
     case FHAZ
     case RHAZ
     case MAST

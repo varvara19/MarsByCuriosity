@@ -10,3 +10,8 @@
 "ATTENTION" = "Attention";
 "CONTINUE" = "Continue";
 "CANCEL" = "Cancel";
+"DASHBOARD.TITLE" = "Select Camera and Date";
+"DATE.TITLE" = "Date";
+"ROVER.CAMERA.TITLE" = "Rover Camera";
+"EXPLORE.BUTTON.TITLE" = "Explore";
+"EMPTY.PHOTO.ARRAY.MESSAGE" = "Sorry, there are no such photos";

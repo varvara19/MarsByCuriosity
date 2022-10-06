@@ -59,3 +59,34 @@ extension UIView {
         }
     }
 }
+
+// MARK: - Animation
+extension UIView {
+    private enum Constants {
+        static let animationDuration: TimeInterval = 0.5
+        static let delay:  TimeInterval = 0
+        static let usingSpringWithDamping: CGFloat = 0.20
+        static let initialSpringVelocity: CGFloat = 3.0
+        static let affineTransform: CGAffineTransform = CGAffineTransform(scaleX: 0.97, y: 0.97)
+    }
+    
+    func scaleUpWithBouncing() {
+        UIView.animate(withDuration: Constants.animationDuration,
+                       delay: Constants.delay,
+                       usingSpringWithDamping: Constants.usingSpringWithDamping,
+                       initialSpringVelocity: Constants.initialSpringVelocity,
+                       options: UIView.AnimationOptions.allowUserInteraction,
+                       animations: { self.transform = Constants.affineTransform },
+                       completion: { _ in })
+    }
+    
+    func scaleDownWithBouncing(duration: TimeInterval = Constants.animationDuration) {
+        UIView.animate(withDuration: duration,
+                       delay: Constants.delay,
+                       usingSpringWithDamping: Constants.usingSpringWithDamping,
+                       initialSpringVelocity: Constants.initialSpringVelocity,
+                       options: UIView.AnimationOptions.allowUserInteraction,
+                       animations: { self.transform = CGAffineTransform.identity },
+                       completion: { _ in })
+    }
+}

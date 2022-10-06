@@ -15,4 +15,19 @@ extension UIApplication {
         
         return rootVC!
     }
+    
+    static var topPresentedViewController: UIViewController {
+        var controller: UIViewController = UIApplication.rootViewController
+        
+        while controller.presentedViewController != nil {
+            controller = controller.presentedViewController!
+        }
+        
+        return controller
+    }
+    
+    static func present(presentVC: UIViewController, on viewController: UIViewController? = nil, completion: (()->())? = nil) {
+        let topPresentedVC = viewController ?? topPresentedViewController
+        topPresentedVC.present(presentVC, animated: true, completion: completion)
+    }
 }

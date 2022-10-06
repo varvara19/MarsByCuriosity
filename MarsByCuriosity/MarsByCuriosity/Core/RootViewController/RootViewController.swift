@@ -23,9 +23,8 @@ class RootViewController: UIViewController {
     }
     
     private func animationToDashboard() {
-        GetMarsPhotoRequest(by: Date(), camera: .all, page: 1) { resp in
-            
-        }.runRequest()
+        let navigationController = UINavigationController(rootViewController: DashboardViewController())
+        self.addNewChildViewController(vc:navigationController)
     }
     
     private func addNewChildViewController(vc: UIViewController) {
