@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		5E1B2DA428EF235D00DDD188 /* ChooseDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B2DA328EF235D00DDD188 /* ChooseDateViewController.swift */; };
 		5E1B2DA628EF695A00DDD188 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E1B2DA528EF695A00DDD188 /* loader.json */; };
+		5E1B2DA928EF69E400DDD188 /* MarsPhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B2DA828EF69E400DDD188 /* MarsPhotoListViewController.swift */; };
+		5E1B2DAD28EF6DDE00DDD188 /* MarsPhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B2DAC28EF6DDE00DDD188 /* MarsPhotoListViewModel.swift */; };
+		5E1B2DAF28EF6E9400DDD188 /* MarsPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B2DAE28EF6E9400DDD188 /* MarsPhotoCollectionViewCell.swift */; };
+		5E1B2DB128EF700900DDD188 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B2DB028EF700900DDD188 /* UICollectionView+Extension.swift */; };
+		5E1B2DB328EF717B00DDD188 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B2DB228EF717B00DDD188 /* UIImageView+Extension.swift */; };
 		5EB1695B28EF1779003F3FD4 /* ChooseValueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */; };
 		5EB1695E28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */; };
 		5EB1696028EF1B78003F3FD4 /* ChooseValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */; };
@@ -62,6 +67,11 @@
 		50C6346D6524EBE083D83E78 /* Pods-MarsByCuriosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsByCuriosity.release.xcconfig"; path = "Target Support Files/Pods-MarsByCuriosity/Pods-MarsByCuriosity.release.xcconfig"; sourceTree = "<group>"; };
 		5E1B2DA328EF235D00DDD188 /* ChooseDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDateViewController.swift; sourceTree = "<group>"; };
 		5E1B2DA528EF695A00DDD188 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		5E1B2DA828EF69E400DDD188 /* MarsPhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoListViewController.swift; sourceTree = "<group>"; };
+		5E1B2DAC28EF6DDE00DDD188 /* MarsPhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoListViewModel.swift; sourceTree = "<group>"; };
+		5E1B2DAE28EF6E9400DDD188 /* MarsPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		5E1B2DB028EF700900DDD188 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		5E1B2DB228EF717B00DDD188 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueViewModel.swift; sourceTree = "<group>"; };
 		5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelController.swift; sourceTree = "<group>"; };
 		5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueTableViewCell.swift; sourceTree = "<group>"; };
@@ -126,6 +136,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E1B2DA728EF69BA00DDD188 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B2DAE28EF6E9400DDD188 /* MarsPhotoCollectionViewCell.swift */,
+				5E1B2DA828EF69E400DDD188 /* MarsPhotoListViewController.swift */,
+				5E1B2DAC28EF6DDE00DDD188 /* MarsPhotoListViewModel.swift */,
+			);
+			path = PhotoList;
+			sourceTree = "<group>";
+		};
 		5EB1695C28EF1807003F3FD4 /* ChooseValueTableViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				5EEEF0F628ED966100C480CE /* Dashboard */,
+				5E1B2DA728EF69BA00DDD188 /* PhotoList */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -224,12 +245,14 @@
 				5EEEF10F28EDAF1600C480CE /* DateFormatter+Extension.swift */,
 				5EEEF0D928EC59E000C480CE /* Int+Extension.swift */,
 				5EEEF0F028EC667400C480CE /* UIApplication+Extension.swift */,
+				5E1B2DB028EF700900DDD188 /* UICollectionView+Extension.swift */,
 				5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */,
 				5EEEF0C628EC4E7500C480CE /* UIDevice+Extension.swift */,
 				5EEEF0FE28ED9A1F00C480CE /* UIFont+Extension.swift */,
 				5EEEF10628EDA3BE00C480CE /* UILabel+Extension.swift */,
 				5EEEF10D28EDAD3600C480CE /* UITableView+Extension.swift */,
 				5EEEF0D528EC58C400C480CE /* UIView+Extension.swift */,
+				5E1B2DB228EF717B00DDD188 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -482,8 +505,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB1696028EF1B78003F3FD4 /* ChooseValueTableViewCell.swift in Sources */,
+				5E1B2DA928EF69E400DDD188 /* MarsPhotoListViewController.swift in Sources */,
 				5EEEF0FB28ED969B00C480CE /* CoreViewController.swift in Sources */,
 				5EEEF10C28EDA9A800C480CE /* DashboardViewModel.swift in Sources */,
+				5E1B2DAF28EF6E9400DDD188 /* MarsPhotoCollectionViewCell.swift in Sources */,
 				5EEEF11B28EEF06300C480CE /* TableFooterViewWithActionButton.swift in Sources */,
 				5EEEF0DC28EC5A7F00C480CE /* Colors.swift in Sources */,
 				5EEEF0E628EC64C200C480CE /* GetMarsPhotoResponse.swift in Sources */,
@@ -491,6 +516,7 @@
 				5EEEF0CD28EC4F7200C480CE /* ErrorInfo.swift in Sources */,
 				5EEEF0CB28EC4F4900C480CE /* NetworkRequest.swift in Sources */,
 				5EEEF12F28EF14E600C480CE /* ChooseValueTableViewController.swift in Sources */,
+				5E1B2DB128EF700900DDD188 /* UICollectionView+Extension.swift in Sources */,
 				5EEEF11728EEE41500C480CE /* ActionButton.swift in Sources */,
 				5EEEF0DF28EC5C8300C480CE /* RoverCamera.swift in Sources */,
 				5EEEF0DA28EC59E000C480CE /* Int+Extension.swift in Sources */,
@@ -506,7 +532,9 @@
 				5EEEF10E28EDAD3600C480CE /* UITableView+Extension.swift in Sources */,
 				5EB1695E28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift in Sources */,
 				5EEEF0F128EC667400C480CE /* UIApplication+Extension.swift in Sources */,
+				5E1B2DAD28EF6DDE00DDD188 /* MarsPhotoListViewModel.swift in Sources */,
 				5EEEF10728EDA3BE00C480CE /* UILabel+Extension.swift in Sources */,
+				5E1B2DB328EF717B00DDD188 /* UIImageView+Extension.swift in Sources */,
 				5EEEF0ED28EC65B600C480CE /* Rover.swift in Sources */,
 				5EEEF10A28EDA94D00C480CE /* DashboardTableViewCellViewModel.swift in Sources */,
 				5EEEF12B28EF129000C480CE /* MarsByCuriosityFloatingPanelLayout.swift in Sources */,
