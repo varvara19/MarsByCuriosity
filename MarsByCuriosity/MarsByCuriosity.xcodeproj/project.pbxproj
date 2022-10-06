@@ -17,6 +17,7 @@
 		5EB1695B28EF1779003F3FD4 /* ChooseValueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */; };
 		5EB1695E28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */; };
 		5EB1696028EF1B78003F3FD4 /* ChooseValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */; };
+		5EBCAB8628EF992E00A777B1 /* UINavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBCAB8528EF992E00A777B1 /* UINavigationItem+Extension.swift */; };
 		5EEEF09528EC306B00C480CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEEF09428EC306B00C480CE /* AppDelegate.swift */; };
 		5EEEF09E28EC306C00C480CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09D28EC306C00C480CE /* Assets.xcassets */; };
 		5EEEF0A128EC306C00C480CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEEF09F28EC306C00C480CE /* LaunchScreen.storyboard */; };
@@ -75,6 +76,7 @@
 		5EB1695A28EF1779003F3FD4 /* ChooseValueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueViewModel.swift; sourceTree = "<group>"; };
 		5EB1695D28EF1A1B003F3FD4 /* CustomFloatingPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelController.swift; sourceTree = "<group>"; };
 		5EB1695F28EF1B78003F3FD4 /* ChooseValueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueTableViewCell.swift; sourceTree = "<group>"; };
+		5EBCAB8528EF992E00A777B1 /* UINavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extension.swift"; sourceTree = "<group>"; };
 		5EEEF09128EC306B00C480CE /* MarsByCuriosity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsByCuriosity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEEF09428EC306B00C480CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EEEF09D28EC306C00C480CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,9 +143,17 @@
 			children = (
 				5E1B2DAE28EF6E9400DDD188 /* MarsPhotoCollectionViewCell.swift */,
 				5E1B2DA828EF69E400DDD188 /* MarsPhotoListViewController.swift */,
-				5E1B2DAC28EF6DDE00DDD188 /* MarsPhotoListViewModel.swift */,
+				5E1B2DB428EF88C300DDD188 /* ViewModels */,
 			);
 			path = PhotoList;
+			sourceTree = "<group>";
+		};
+		5E1B2DB428EF88C300DDD188 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5E1B2DAC28EF6DDE00DDD188 /* MarsPhotoListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		5EB1695C28EF1807003F3FD4 /* ChooseValueTableViewController */ = {
@@ -249,10 +259,11 @@
 				5EEEF0BD28EC47F400C480CE /* UIColor+Extension.swift */,
 				5EEEF0C628EC4E7500C480CE /* UIDevice+Extension.swift */,
 				5EEEF0FE28ED9A1F00C480CE /* UIFont+Extension.swift */,
+				5E1B2DB228EF717B00DDD188 /* UIImageView+Extension.swift */,
 				5EEEF10628EDA3BE00C480CE /* UILabel+Extension.swift */,
+				5EBCAB8528EF992E00A777B1 /* UINavigationItem+Extension.swift */,
 				5EEEF10D28EDAD3600C480CE /* UITableView+Extension.swift */,
 				5EEEF0D528EC58C400C480CE /* UIView+Extension.swift */,
-				5E1B2DB228EF717B00DDD188 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -548,6 +559,7 @@
 				5EEEF12D28EF137900C480CE /* FloatingPanelHeaderView.swift in Sources */,
 				5EEEF0F828ED967200C480CE /* DashboardViewController.swift in Sources */,
 				5EEEF0C528EC4E2200C480CE /* AppConstants.swift in Sources */,
+				5EBCAB8628EF992E00A777B1 /* UINavigationItem+Extension.swift in Sources */,
 				5EEEF0CF28EC4FF700C480CE /* Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,6 +39,7 @@ final class MarsPhotoListViewController: CoreViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     
     override func addSubviews() {
         view.addSubview(collectionView)
@@ -49,9 +50,9 @@ final class MarsPhotoListViewController: CoreViewController {
     }
     
     private func setupNavBar() {
-        navigationItem.title = viewModel.title
-        
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(onBackButton))
+        
+        navigationItem.titleView = UINavigationItem.setTitle(title: viewModel.title, subtitle: viewModel.displayableDate, type: .boldTitle)
     }
     
     private func addBackSwipe() {
