@@ -5,6 +5,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol DashboardViewModelDelegate: AnyObject {
     func reloadData()
@@ -52,17 +53,21 @@ final class DashboardViewModel {
     
     func didClickActionButton() {
         guard
-            let selectedDate = sourceArray.first(where: { $0.type == .date })?.selectedValue,
-            let date = DateFormatter.date(fromString: selectedDate, with: AppConstants.displayableDateFormat),
+            let dateField = sourceArray.first(where: { $0.type == .date }),
+            let date = DateFormatter.date(fromString: dateField.selectedValue ?? dateField.defaultValue, with: AppConstants.displayableDateFormat),
             let serverStringDate = DateFormatter.string(fromDate: date, with: AppConstants.serverDateFormat),
-            let roverCameraTitle = sourceArray.first(where: { $0.type == .selectionRoverCamera })?.selectedValue,
-            let roverCamera = RoverCamera.allCases.first(where: { $0.title == roverCameraTitle })
+            let roverCameraField = sourceArray.first(where: { $0.type == .selectionRoverCamera }),
+            let roverCamera = RoverCamera.allCases.first(where: { $0.title == roverCameraField.selectedValue ?? roverCameraField.defaultValue })
         else { return }
         
-        
-        GetMarsPhotoRequest(by: serverStringDate, camera: roverCamera, page: 1) { response in
+        GetMarsPhotoRequest(by: "2014-6-3", camera: roverCamera, page: 1) { response in
             guard response.photos.count > 0 else { AlertManager.showAlert(title: LS("ATTENTION"), message: LS("EMPTY.PHOTO.ARRAY.MESSAGE")); return }
             
+            let photoListViewController = MarsPhotoListViewController(viewModel: MarsPhotoListViewModel(roverCamera: roverCamera, photos: response.photos, date: date))
+            
+            DispatchQueue.main.async {
+                UIApplication.push(viewController: photoListViewController)
+            }
             
         }.runRequest()
     }
