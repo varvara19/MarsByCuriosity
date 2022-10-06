@@ -14,10 +14,14 @@ final class FooterViewWithActionButton: UIView {
     }
     
     private let title: String
-    private lazy var actionButton = ActionButton(title: title)
+    private let target: AnyObject?
+    private let selector: Selector
+    private lazy var actionButton = ActionButton(title: title, target: target, action: selector)
     
-    init(buttonTitle: String) {
+    init(buttonTitle: String, target: AnyObject?, selector: Selector) {
         self.title = buttonTitle
+        self.target = target
+        self.selector = selector
         
         super.init(frame: .zero)
         
@@ -38,6 +42,7 @@ final class FooterViewWithActionButton: UIView {
             $0.top.equalToSuperview().inset(Dimensions.topInset)
             $0.leading.trailing.equalToSuperview().inset(Dimensions.leadingTrailingInset)
             $0.height.equalTo(Dimensions.buttonHeight)
+            $0.bottom.equalToSuperview()
         }
     }
 }

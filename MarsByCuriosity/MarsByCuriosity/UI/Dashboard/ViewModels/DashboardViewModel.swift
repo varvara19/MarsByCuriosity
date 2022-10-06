@@ -49,6 +49,23 @@ final class DashboardViewModel {
     func didSelectRowAt(indexPath: IndexPath) {
         sourceArray[indexPath.row].didSelectNewValue()
     }
+    
+    func didClickActionButton() {
+        guard
+            let selectedDate = sourceArray.first(where: { $0.type == .date })?.selectedValue,
+            let date = DateFormatter.date(fromString: selectedDate, with: AppConstants.displayableDateFormat),
+            let serverStringDate = DateFormatter.string(fromDate: date, with: AppConstants.serverDateFormat),
+            let roverCameraTitle = sourceArray.first(where: { $0.type == .selectionRoverCamera })?.selectedValue,
+            let roverCamera = RoverCamera.allCases.first(where: { $0.title == roverCameraTitle })
+        else { return }
+        
+        
+        GetMarsPhotoRequest(by: serverStringDate, camera: roverCamera, page: 1) { response in
+            guard response.photos.count > 0 else { AlertManager.showAlert(title: LS("ATTENTION"), message: LS("EMPTY.PHOTO.ARRAY.MESSAGE")); return }
+            
+            
+        }.runRequest()
+    }
 }
 
 // MARK: - DashboardTableViewCellViewModelDelegate

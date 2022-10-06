@@ -14,3 +14,4 @@
 "DATE.TITLE" = "Date";
 "ROVER.CAMERA.TITLE" = "Rover Camera";
 "EXPLORE.BUTTON.TITLE" = "Explore";
+"EMPTY.PHOTO.ARRAY.MESSAGE" = "Sorry, there are no such photos";

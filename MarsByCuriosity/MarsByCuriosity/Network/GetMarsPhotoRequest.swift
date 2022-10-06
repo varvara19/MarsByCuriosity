@@ -7,21 +7,12 @@
 import Foundation
 
 final class GetMarsPhotoRequest {
-    private let date: Date?
+    private let date: String?
     private let camera: RoverCamera
     private let page: Int
     private let completion: (GetMarsPhotoResponse) -> ()
     
-    private var stringDate: String {
-        guard let date = date else { return "none" }
-        
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-mm-dd"
-        
-        return "2015-6-3"
-    }
-    
-    init(by date: Date?, camera: RoverCamera, page: Int, completion: @escaping (GetMarsPhotoResponse) -> ()) {
+    init(by date: String?, camera: RoverCamera, page: Int, completion: @escaping (GetMarsPhotoResponse) -> ()) {
         self.date = date
         self.camera = camera
         self.page = page
@@ -31,7 +22,7 @@ final class GetMarsPhotoRequest {
     func runRequest() {
         guard var urlComponents = URLComponents(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos") else { return }
         
-        var queryItems = [URLQueryItem(name: "earth_date", value: stringDate)]
+        var queryItems = [URLQueryItem(name: "earth_date", value: date)]
         
         queryItems.append(URLQueryItem(name: "api_key", value: AppConstants.apiKey))
         

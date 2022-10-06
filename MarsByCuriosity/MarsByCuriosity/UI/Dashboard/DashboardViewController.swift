@@ -11,7 +11,7 @@ final class DashboardViewController: CoreViewController {
     private let imageView = UIImageView(image: UIImage(named: "dashboardImage"))
     private lazy var viewModel = DashboardViewModel(delegate: self)
     
-    private let footerView = FooterViewWithActionButton(buttonTitle: LS("EXPLORE.BUTTON.TITLE"))
+    private lazy var footerView = FooterViewWithActionButton(buttonTitle: LS("EXPLORE.BUTTON.TITLE"), target: self, selector: #selector(didClickActionButton))
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -56,6 +56,10 @@ final class DashboardViewController: CoreViewController {
     
     private func setupNavBar() {
         navigationItem.title = LS("DASHBOARD.TITLE")
+    }
+    
+    @objc private func didClickActionButton() {
+        viewModel.didClickActionButton()
     }
 }
 
