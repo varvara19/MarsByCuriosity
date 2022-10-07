@@ -55,10 +55,14 @@ final class PhotoDetailViewController: CoreViewController {
     }
     
     private func loadImage() {
-        AppHUD.show()
-        
-        marsPhotoImageView.downloaded(from: viewModel.urlString) {
-            AppHUD.hide()
+        if let image = viewModel.image {
+            marsPhotoImageView.image = image
+        } else if let imageUrlString = viewModel.urlString {
+            AppHUD.show()
+            marsPhotoImageView.downloaded(from: imageUrlString) { image in
+                self.viewModel.image = image
+                AppHUD.hide()
+            }
         }
     }
     
@@ -90,7 +94,7 @@ final class PhotoDetailViewController: CoreViewController {
         guard let selectedImage = marsPhotoImageView.image else { return }
         
         AppHUD.show()
-
+        
         UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     

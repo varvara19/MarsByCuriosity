@@ -21,6 +21,12 @@ final class MarsPhotoCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        marsPhotoImageView.image = nil
+    }
+    
     private func addSubviews() {
         contentView.addSubview(marsPhotoImageView)
     }
@@ -36,8 +42,12 @@ final class MarsPhotoCollectionViewCell: UICollectionViewCell {
     }
     
     func updateWith(entity: Photo) {
-        guard let imageUrlString = entity.imgSrc else { return }
-        
-        marsPhotoImageView.downloaded(from: imageUrlString)
+        if let image = entity.image {
+            marsPhotoImageView.image = image
+        } else if let imageUrlString = entity.imgSrc {
+            marsPhotoImageView.downloaded(from: imageUrlString) { image in
+                entity.image = image
+            }
+        }
     }
 }
