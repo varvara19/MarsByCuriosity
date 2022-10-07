@@ -16,3 +16,5 @@
 "EXPLORE.BUTTON.TITLE" = "Explore";
 "EMPTY.PHOTO.ARRAY.MESSAGE" = "Sorry, there are no such photos";
 "PHOTO.ID.TITLE" = "Photo ID";
+"SUCCESS.TITLE" = "Success";
+"SUCCESS.DOWNLOAD.MESSAGE" = "Image did saved";

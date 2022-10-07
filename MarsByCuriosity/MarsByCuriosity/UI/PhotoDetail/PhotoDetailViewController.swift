@@ -66,6 +66,8 @@ final class PhotoDetailViewController: CoreViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(onBackButton))
         
         navigationItem.titleView = UINavigationItem.setTitle(title: viewModel.title, subtitle: viewModel.subtitle, type: .boldDescription)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "share"), style: .plain, target: self, action: #selector(didClickDownloadButton))
     }
     
     private func setupImageView() {
@@ -82,6 +84,24 @@ final class PhotoDetailViewController: CoreViewController {
     @objc private func onBackButton() {
         navigationController?.popViewController(animated: true)
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
+    }
+    
+    @objc private func didClickDownloadButton() {
+        guard let selectedImage = marsPhotoImageView.image else { return }
+        
+        AppHUD.show()
+
+        UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
+    
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        AppHUD.hide()
+        
+        if let error = error {
+            AlertManager.showError(error.localizedDescription)
+        } else {
+            AlertManager.showAlert(title: LS("SUCCESS.TITLE"), message: LS("SUCCESS.DOWNLOAD.MESSAGE"))
+        }
     }
 }
 
