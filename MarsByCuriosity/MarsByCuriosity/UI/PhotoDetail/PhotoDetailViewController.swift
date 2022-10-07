@@ -69,9 +69,11 @@ final class PhotoDetailViewController: CoreViewController {
     private func setupNavBar() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(onBackButton))
         
-        navigationItem.titleView = UINavigationItem.setTitle(title: viewModel.title, subtitle: viewModel.subtitle, type: .boldDescription)
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "share"), style: .plain, target: self, action: #selector(didClickDownloadButton))
+        
+        DispatchQueue.main.async {
+            self.navigationItem.titleView = UINavigationItem.setTitle(title: self.viewModel.title, subtitle: self.viewModel.subtitle, type: .boldDescription)
+        }
     }
     
     private func setupImageView() {
