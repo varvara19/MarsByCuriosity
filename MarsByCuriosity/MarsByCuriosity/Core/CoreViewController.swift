@@ -7,6 +7,9 @@
 import UIKit
 
 class CoreViewController: UIViewController {
+    var backgroundColor: UIColor { .backgroundColor }
+    var textColor: UIColor { .appBlack }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,8 +20,6 @@ class CoreViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let backgroundColor: UIColor = .backgroundColor
-        let textColor: UIColor = .appBlack
         let navBarImage = UIImage()
         
         let titleAttributes = [NSAttributedString.Key.foregroundColor: UIColor.appBlack,

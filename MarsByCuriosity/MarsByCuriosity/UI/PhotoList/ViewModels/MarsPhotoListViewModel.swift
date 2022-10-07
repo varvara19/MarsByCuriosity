@@ -5,6 +5,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol MarsPhotoListViewModelDelegate: AnyObject {
     func reloadData()
@@ -51,5 +52,13 @@ final class MarsPhotoListViewModel {
             
             self.delegate?.reloadData()
         }.runRequest()
+    }
+    
+    func didClickMarsPhoto(at indexPath: IndexPath) {
+        let photo = photos[indexPath.row]
+        
+        let detailController = PhotoDetailViewController(viewModel: PhotoDetailViewModel(photo: photo))
+        
+        UIApplication.push(viewController: detailController)
     }
 }
