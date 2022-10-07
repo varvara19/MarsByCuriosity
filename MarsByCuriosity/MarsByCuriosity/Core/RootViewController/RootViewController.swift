@@ -22,7 +22,10 @@ class RootViewController: UIViewController {
         animationToDashboard()
     }
     
-    private func animationToDashboard() { }
+    private func animationToDashboard() {
+        let navigationController = UINavigationController(rootViewController: DashboardViewController())
+        self.addNewChildViewController(vc:navigationController)
+    }
     
     private func addNewChildViewController(vc: UIViewController) {
         self.animation(duration: 0.26, newVC: vc, oldVC: self.childViewController)

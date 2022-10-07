@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = RootViewController()
         window?.makeKeyAndVisible()
+        
+        UIApplication.shared.statusBarStyle = .darkContent
 
         return true
     }
