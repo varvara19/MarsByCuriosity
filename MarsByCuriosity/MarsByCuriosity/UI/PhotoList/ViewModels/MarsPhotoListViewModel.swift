@@ -43,7 +43,7 @@ final class MarsPhotoListViewModel {
         
         isLoadingNextPage = true
         
-        GetMarsPhotoRequest(by: "2014-6-3", camera: roverCamera, page: currentPageNumber + 1) { response in
+        GetMarsPhotoRequest(by: serverDate, camera: roverCamera, page: currentPageNumber + 1) { response in
             guard response.photos.count > 0 else { AlertManager.showAlert(title: LS("ATTENTION"), message: LS("EMPTY.PHOTO.ARRAY.MESSAGE")); return }
             
             self.currentPageNumber += 1

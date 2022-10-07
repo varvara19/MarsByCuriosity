@@ -60,7 +60,7 @@ final class DashboardViewModel {
             let roverCamera = RoverCamera.allCases.first(where: { $0.title == roverCameraField.selectedValue ?? roverCameraField.defaultValue })
         else { return }
         
-        GetMarsPhotoRequest(by: "2014-6-3", camera: roverCamera, page: 1) { response in
+        GetMarsPhotoRequest(by: serverStringDate, camera: roverCamera, page: 1) { response in
             guard response.photos.count > 0 else { AlertManager.showAlert(title: LS("ATTENTION"), message: LS("EMPTY.PHOTO.ARRAY.MESSAGE")); return }
             
             let photoListViewController = MarsPhotoListViewController(viewModel: MarsPhotoListViewModel(roverCamera: roverCamera, photos: response.photos, date: date))

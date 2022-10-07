@@ -4,7 +4,7 @@
 //
 //
 
-import Foundation
+import UIKit
 
 final class Photo: Codable {
     var id, sol: Int?
@@ -12,6 +12,8 @@ final class Photo: Codable {
     var imgSrc: String?
     var earthDate: String?
     var rover: Rover?
+    
+    var image: UIImage?
 
     enum CodingKeys: String, CodingKey {
         case id, sol, camera
