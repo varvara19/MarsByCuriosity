@@ -1,0 +1,96 @@
+//
+//  PhotoDetailViewController.swift
+//  MarsByCuriosity
+//
+//
+
+import UIKit
+
+final class PhotoDetailViewController: CoreViewController {
+    override var textColor: UIColor { .appWhite }
+    override var backgroundColor: UIColor { .appBlack }
+    
+    private let marsPhotoImageView = UIImageView()
+    private let viewModel: PhotoDetailViewModel
+    
+    init(viewModel: PhotoDetailViewModel) {
+        self.viewModel = viewModel
+        
+        super.init(nibName: nil, bundle: nil)
+        
+        setupNavBar()
+        setupImageView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loadImage()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.shared.statusBarStyle = .darkContent
+    }
+    
+    override func addSubviews() {
+        view.addSubview(marsPhotoImageView)
+    }
+    
+    override func setupConstraints() {
+        marsPhotoImageView.snp.makeConstraints {
+            $0.top.bottom.equalTo(view.safeAreaLayoutGuide).offset(16)
+            $0.leading.trailing.equalToSuperview().inset(16)
+        }
+    }
+    
+    private func loadImage() {
+        AppHUD.show()
+        
+        marsPhotoImageView.downloaded(from: viewModel.urlString) {
+            AppHUD.hide()
+        }
+    }
+    
+    private func setupNavBar() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(onBackButton))
+        
+        navigationItem.titleView = UINavigationItem.setTitle(title: viewModel.title, subtitle: viewModel.subtitle, type: .boldDescription)
+    }
+    
+    private func setupImageView() {
+        marsPhotoImageView.layer.masksToBounds = true
+        marsPhotoImageView.layer.cornerRadius = AppConstants.cornerRadius
+        marsPhotoImageView.backgroundColor = .cellBackgroundColor
+    }
+    
+    private func addBackSwipe() {
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+    }
+    
+    @objc private func onBackButton() {
+        navigationController?.popViewController(animated: true)
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+    }
+}
+
+// MARK: - UIGestureRecognizerDelegate
+extension PhotoDetailViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        guard gestureRecognizer == self.navigationController?.interactivePopGestureRecognizer else { return true }
+        
+        onBackButton()
+        return false
+    }
+}

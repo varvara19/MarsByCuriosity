@@ -93,7 +93,7 @@ extension MarsPhotoListViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 extension MarsPhotoListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        viewModel.didClickMarsPhoto(at: indexPath)
     }
 }
 

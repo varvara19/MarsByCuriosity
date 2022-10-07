@@ -55,7 +55,7 @@ extension UINavigationItem {
         subtitleLabel.text = subtitle
         subtitleLabel.sizeToFit()
 
-        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: titleLabel.frame.size.width, height: titleLabel.frame.size.height))
+        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: titleLabel.frame.size.width, height: 20))
         titleView.addSubview(titleLabel)
         titleView.addSubview(subtitleLabel)
 
